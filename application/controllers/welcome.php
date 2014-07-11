@@ -17,18 +17,14 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	public function index($id = 0)
 	{
 		$this->load->model('Customers_model');
-		echo '<pre>';
-		var_dump($this->Customers_model->get_customers);//current controller//model used//get customers used to get data customers
 		
-		
-		echo '</pre>';
-		
-		/*$data['title'] = "New Title";
+		$data['query']= $this->Customers_model->get_Customers($id);
+		$data['title'] = "New Title";
 		$data['banner'] = "New Banner!";
-		$this->load->view('welcome_message',$data);//titles go into data array*/
+		$this->load->view('welcome_message',$data);//titles go into data array
 		
 		
 	}
