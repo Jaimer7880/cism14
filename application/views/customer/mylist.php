@@ -22,7 +22,7 @@
 				echo '<p>Sorry, no customers</p>';
 				//sorry no customers
 			}
-		
+		echo anchor('customer/add','Add Customer');
 		$this->load->view($this->config->item('theme').'footer');//include path to the views file//data passed from controller into this view
 
 		
