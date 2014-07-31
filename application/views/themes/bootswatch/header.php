@@ -25,8 +25,8 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
 			<li class="active"><a href="#" title="">Active Link</a></li>
-			<li><a href="#" title="">Other Link</a></li>
-			<li><a href="#" title="">Other Link</a></li>
+			<li><?=anchor('customer/mylist','Customers')?></a></li>
+			<li><?=anchor('customer/add','Add Customer')?></a></li>
           </ul>
         </div>
       </div>
